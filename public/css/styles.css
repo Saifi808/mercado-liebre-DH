@@ -1,0 +1,414 @@
+/* Index */
+
+*{font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  margin: 0px;
+box-sizing: border-box;}
+
+body{
+    background-color: #eaeaea;
+}
+h5 {
+    text-align:center; 
+    font-size:18px;
+}
+a { outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: black 
+
+}
+a:hover {font-weight: bolder;
+}
+
+/* header */
+
+.top-header {
+    background-color: #eac926;
+    padding: 15px;
+}
+.ingresodato {
+    height: 30px;
+    border-radius: 3 rem;
+    width: 100%;
+    
+}
+header .logo_nav {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header .logo {
+    width: 4vw;
+}
+header h2 {
+    text-align: center;
+    padding: 15px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+header h2 div {
+    font-size: 12px;
+}
+header .form .input {
+    background-color: white;
+    color: #666;
+    outline: none;
+    width: 40vw;
+    font-size: 8px;
+    padding: 7px;
+    height: 20px;
+    margin: 5px;
+    overflow: hidden;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+header .form {
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right:auto;
+}
+header .compraencuotas{
+    width: 100%;
+}
+header .menu {
+    padding: 15px
+}
+header  {
+    padding:10px;
+}
+header nav {
+    font-size: 12px;
+    display:none;
+}
+header .menu_tienda {
+    display:flex;
+    width: 50%;
+    justify-content:left;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+header .items_menu_tienda{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header .menu_usuario {
+    display:flex;
+    width: 50%;
+    justify-content: right;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+header .hamburguer-button{
+    display:flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+header .hamburguer-button i{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0044AA;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    
+}
+/* main body */
+
+body h2 {text-align: center;}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.logobanner{
+    width: 100%
+}
+
+h3{
+    font-size: 24px;
+    margin: 10px;
+}
+h4{
+    padding: 15px;
+
+}
+main img {
+    width: 90%
+}
+
+main article .main-article {
+    padding: 10px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+}
+main section article:hover .descripcion{
+    opacity: 100%;
+    transition: all 1.5s;
+}
+
+main section article {
+    background-color: #fff;
+    margin-bottom: 10px;    
+}
+main section article:hover {
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+main section article img {
+    margin: 15px;
+}
+
+main section .listado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 30px;
+    top : 10 px;
+}
+main section article i:hover{
+    transform: rotate(-90deg);
+    transition: all 1s;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+    padding-left:10px;
+}
+
+.descripcion{
+    font-size: 16px;
+    display:none;
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    padding: 15px;
+    font-size: 12px;
+}
+footer section {
+    padding: 15px;
+    text-align: center;
+}
+
+footer section div {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+footer section div i {
+    color: blue;
+}
+footer section div i:hover{
+    animation:color_icono_footer 3s infinite alternate;
+}
+
+@keyframes color_icono_footer {
+    0% {color:#666;transform: translate(0px, -1px)}
+    25% {transform: translate(0px, -0.5px)}
+    50% {color:#39b54a; transform: translate(0px, 1px)}
+    75% {transform: translate(0px, 0.5px)}
+    100% {color:#0022AA ; transform: translate(0px, -1px)} 
+}
+h5 {
+    color:#666;
+    text-align: center;
+    padding: 20px;
+}
+
+/* responsive multiplataforma */
+/* navegación tablets */
+
+@media (min-width: 361px){
+
+.descripcion {display:block;
+opacity:0%;}
+
+header nav{
+    display:block;
+    display:flex;
+    font-size: 8px;
+}
+header .hamburguer-button{
+    display:none;
+}
+main section article {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:20px;   
+}
+header .items_menu_tienda{
+    margin-left: 7px;
+    margin-right: 10px;
+}
+header .logo {
+    width: 30vw;
+}
+header .top-header {
+    display:flex;
+    flex-wrap: unset;
+    justify-content:left;   
+}
+header .form .input{
+    width: 30vw;
+    font-size: 8px;
+}
+header .compraencuotas {
+    width: 25vw;
+    font-size: 8px;
+}
+}
+
+@media (min-width: 510px){
+    header nav {margin-top: 10px;}
+    
+    .listadoregistro{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 510px;}
+
+}
+
+/* navegación Desktop */
+
+@media (min-width: 769px){
+
+    main section article {
+        width: 22%;
+        margin-left: 10px;
+        margin-right: 10px; 
+        margin-top:20px;  
+    }
+    header .form .input{
+        width: 30vw;
+        font-size: 12px;
+    }
+    header .compraencuotas {
+        width: 30vw;
+        font-size: 12px;
+    }
+    header .items_menu_tienda{
+        font-size: 12px;
+    }
+    footer {
+        margin-top: 50px;
+   }
+    footer .boxfooter {
+        display:flex;
+        justify-content: space-evenly;
+    }   
+    .listadoregistro{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 510px;
+    }
+}
+
+/* register & login */
+
+.logoregister {
+    width: 200px;
+}
+.cajaregistro {
+    width: 100%;
+    text-align: left;
+}
+.top-header-register {
+    background-color: #eac926;
+    padding: 15px;
+    height: 90px;
+}
+
+body .listadoregistro {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 12px;
+    width: 100%;
+    background-color: #eac926;
+    border: 1px solid grey;
+    padding: 25px;
+    border-radius: 1rem;
+}
+body .listadologin {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+
+body .camposformulario {
+    padding: 3px;
+    margin: 0 auto;
+}
+body .boxcategorias{
+    padding:10px;
+}
+body .boxbotones {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+body .botonenviar {
+    width: 120px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+body .botonenviar:hover {
+   background-color: #0022AA;
+   transition: all 0.5s;
+}
+body .boton {
+    width: 120px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+.cajacelesteregistro{
+    height: 30%;
+    background-color: grey;
+}
+body .tituloregistro{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+header .headerlogo {
+    display:flex;
+    justify-content: space-between;
+}
+
+.world-header {
+    background-color: #eac926;
+    padding: 15px;
+}
